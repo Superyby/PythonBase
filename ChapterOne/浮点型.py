@@ -20,3 +20,22 @@ one_ml = 1e-3 # 1的10的-3次方
 print(one_ml)
 one_mg = 1E-3 # 1的10的-3次方
 print(one_mg)
+
+
+"""--------------------格式化输出--------------------"""
+name = '张三'
+gender = '男'
+age = 25
+weight = 70.5
+
+# 只能是字符串之间的拼接
+info = '我叫' + name + ',我是' + gender + '生' + '今年' + str(age) + '岁' + '体重' + str(weight) + '公斤'
+print(info)
+
+# 写法二，使用占位符
+info1 = '我叫%s,我是%s生,今年%d岁,体重%.1f公斤' % (name, gender, age, weight)
+print(info1)
+
+# 写法三，使用format方法
+info3 = f'我叫{name},我是{gender}生,今年{age}岁,体重{weight:.1f}公斤'
+print(info3)
