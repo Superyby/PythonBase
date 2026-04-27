@@ -12,5 +12,10 @@ def greet(name, height, age, gender):
 
 greet('张三', 150, 15, '男')
 
-################### 关键字参数 ########################
 
+################### 关键字参数 ########################
+def geeet1(name, height, age, gender):
+    print(f'我是{name},身高:{height},性别:{gender},年龄{age}')  # 位置参数必须在关键字参数前面
+
+
+geeet1('张三', 150, gender='男', age=15)
